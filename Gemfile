@@ -34,6 +34,13 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  # Add rspec for testing
+  gem 'rspec-rails'
+  # Factory for generating resources for testing
+  gem 'factory_girl_rails'
+  # Database cleaner to clean the db after each test
+  gem 'database_cleaner'
 end
 
 group :development do
